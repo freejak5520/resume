@@ -1,9 +1,20 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --font-pretendard: "Pretendard", sans-serif;
+
+  --text-4xl: 2rem;
+  --text-3xl: 1.75rem;
+  --text-2xl: 1.5rem;
+  --text-xl: 1.25rem;
+  --text-lg: 1.125rem;
+  --text-base: 1rem;
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -112,9 +123,54 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 break-keep;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-pretendard;
+  }
+
+  main {
+    @media screen {
+      @apply p-12 max-w-screen-lg mx-auto;
+    }
+  }
+
+  h1 {
+    @apply text-4xl font-extrabold tracking-tight pb-2 border-b text-green-800;
+  }
+  h2 {
+    @apply border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-green-800;
+  }
+  h3 {
+    @apply text-2xl font-semibold tracking-tight;
+  }
+  h4 {
+    @apply text-lg font-semibold tracking-tight;
+  }
+  h5 {
+    @apply text-lg font-semibold tracking-tight;
+  }
+  h6 {
+    @apply text-base font-semibold tracking-tight;
+  }
+
+  p {
+    @apply leading-6 whitespace-pre-line;
+  }
+
+  ul {
+    @apply list-disc pl-4;
+  }
+
+  li {
+    @apply leading-6 [&:not(:first-child)]:mt-1;
+  }
+
+  blockquote {
+    @apply border-l-2 pl-6 italic;
+  }
+
+  code {
+    @apply relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
   }
 }
