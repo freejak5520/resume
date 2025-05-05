@@ -29,7 +29,7 @@ export function ProjectAside({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <p className={cn("min-w-[150px]", className)}>{children}</p>;
+  return <div className={cn("min-w-[150px]", className)}>{children}</div>;
 }
 
 /**
@@ -44,5 +44,5 @@ export function ProjectContent({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <p className={cn("flex-1", className)}>{children}</p>;
+  return <div className={cn("flex-1", className)}>{children}</div>;
 }
