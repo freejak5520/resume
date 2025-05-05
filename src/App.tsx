@@ -2,8 +2,20 @@ import { Company, List, ListItem, Section, SubInfo, Text } from "@/components";
 import { Contact, ContactList } from "@/components/Contact";
 import { Project, ProjectAside, ProjectContent } from "@/components/Project";
 import { ExperienceSkills, MySkill, MySkillList } from "@/components/Skill";
+import { getQueryParams } from "@/lib/utils";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [contact, setContact] = useState<string | null>(null);
+
+  useEffect(() => {
+    const params = getQueryParams();
+
+    if (params.contact) {
+      setContact(params.contact);
+    }
+  }, []);
+
   return (
     <main>
       <h1>이현진</h1>
@@ -11,7 +23,7 @@ function App() {
       <Section>
         <ContactList>
           <Contact title="이메일">freejak5520@gmail.com</Contact>
-          <Contact title="연락처">010-0000-0000</Contact>
+          {contact && <Contact title="연락처">{contact}</Contact>}
           <Contact title="GitHub">
             <a href="https://github.com/freejak5520" target="_blank">
               https://github.com/freejak5520
@@ -136,9 +148,16 @@ function App() {
                   과정 개선
                 </ListItem>
                 <ListItem>
-                  반복적으로 작성하던 Storybook 코드 스니펫을 VS Code 확장 프로그램으로 개발하여 사내 공유 및
-                  마켓플레이스(<a href="https://marketplace.visualstudio.com/items?itemName=JakeLee.storybook-8-typescript-snippets">링크</a>)와
-                  GitHub(<a href="https://github.com/freejak5520/storybook-8-typescript-snippets">링크</a>)에 공개
+                  반복적으로 작성하던 Storybook 코드 스니펫을 VS Code 확장
+                  프로그램으로 개발하여 사내 공유 및 마켓플레이스(
+                  <a href="https://marketplace.visualstudio.com/items?itemName=JakeLee.storybook-8-typescript-snippets">
+                    링크
+                  </a>
+                  )와 GitHub(
+                  <a href="https://github.com/freejak5520/storybook-8-typescript-snippets">
+                    링크
+                  </a>
+                  )에 공개
                 </ListItem>
                 <ListItem>
                   레거시 모달 시스템을 개선하고, 기존 모달 컨텐츠 문서화 및 개발
