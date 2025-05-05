@@ -123,10 +123,9 @@ function App() {
                   비정상적인 사용량 증가를 빠르게 인지하고 대처
                 </ListItem>
                 <ListItem>
-                  주류 상세페이지 canonical URL을 개선해 구글 서치 콘솔 기준
-                  1만건 이상 존재하던{" "}
-                  <code>표준이 없는 중복 페이지 색인 문제</code>를 약
-                  1,500건으로 줄이고 현재도 지속적으로 감소 중
+                  주류 상세페이지의 canonical URL을 개선해 구글 서치 콘솔 기준
+                  1만건 이상의 <code>표준이 없는 중복 페이지 색인 문제</code>를
+                  약 1,500건으로 줄이고 현재도 지속적으로 감소 중
                 </ListItem>
                 <ListItem>
                   업무 내용 공유 및 개발 가이드를 위한 개발 문서 작성
@@ -148,7 +147,8 @@ function App() {
 
               <ExperienceSkills>
                 기술 스택: Next.js, TypeScript, SWR, React Hook Form,
-                styled-components, Storybook, Chromatic, CircleCI, ECS
+                styled-components, Storybook, Chromatic, CircleCI, AWS ECS,
+                CloudWatch
               </ExperienceSkills>
             </ProjectContent>
           </Project>
