@@ -1,6 +1,9 @@
 import { cn } from "@/lib/utils";
 
-export function Career({
+/**
+ * 경력 사항 프로젝트 컴포넌트
+ */
+export function Project({
   children,
   className,
 }: {
@@ -14,7 +17,7 @@ export function Career({
   );
 }
 
-export function CareerSide({
+export function ProjectAside({
   children,
   className,
 }: {
@@ -24,7 +27,7 @@ export function CareerSide({
   return <p className={cn("min-w-[150px]", className)}>{children}</p>;
 }
 
-export function CareerContent({
+export function ProjectContent({
   children,
   className,
 }: {

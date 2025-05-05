@@ -2,16 +2,15 @@ import {
   Company,
   Contact,
   ContactList,
-  Text,
-  Experience,
-  ExperienceList,
+  ListItem,
+  List,
   ExperienceSkills,
   Section,
-  Skill,
-  MySkillList,
   SubInfo,
+  Text,
 } from "@/components";
-import { Career, CareerContent, CareerSide } from "@/components/Career";
+import { Project, ProjectAside, ProjectContent } from "@/components/Project";
+import { MySkillList, MySkill } from "@/components/Skill";
 
 function App() {
   return (
@@ -65,13 +64,13 @@ function App() {
         <h2>기술 스택</h2>
 
         <MySkillList>
-          <Skill>TypeScript, JavaScript, React, Next.js</Skill>
-          <Skill>
+          <MySkill>TypeScript, JavaScript, React, Next.js</MySkill>
+          <MySkill>
             styled-components, Emotion, TailwindCSS, SWR, React Hook Form
-          </Skill>
-          <Skill>
+          </MySkill>
+          <MySkill>
             Vite, Storybook, Chromatic, CircleCI, AWS ECS, CloudWatch
-          </Skill>
+          </MySkill>
         </MySkillList>
       </Section>
 
@@ -84,15 +83,12 @@ function App() {
           <SubInfo>프로덕션팀 | 프론트엔드 엔지니어 | 정규직</SubInfo>
 
           <Text>
-            B2B 온라인 주류 유통, 발주 플랫폼{" "}
-            <a href="https://business.veluga.kr/" target="_blank">
-              <b className="underline">벨루가 비즈니스</b>
-            </a>{" "}
-            로 주류 유통 혁신에 도전하는 스타트업입니다.
+            B2B 온라인 주류 유통, 발주 플랫폼 <b>벨루가 비즈니스</b>로 주류 유통
+            혁신에 도전하는 스타트업입니다.
           </Text>
 
-          <Career>
-            <CareerSide>
+          <Project>
+            <ProjectAside>
               <h4>
                 <a href="https://business.veluga.kr/" target="_blank">
                   벨루가 비즈니스
@@ -100,70 +96,71 @@ function App() {
               </h4>
 
               <SubInfo>2024. 07. ~</SubInfo>
-            </CareerSide>
-            <CareerContent>
+            </ProjectAside>
+            <ProjectContent>
               <Text>
                 후기와 실제 발주, 판매 데이터를 이용해 주류를 판매하는 상점들
                 공급사에게 정보를 제공하고, 온라인으로 발주할 수 있는 중계
                 플랫폼을 제공합니다.
               </Text>
 
-              <ExperienceList>
-                <Experience>
-                  후기 작성, 주류 인포그래픽 등의 신규 기능 구현
-                </Experience>
-                <Experience>
+              <List>
+                <ListItem>
+                  후기 작성, 주류 인포그래픽 등의 프론트엔드 신규 기능 구현
+                </ListItem>
+                <ListItem>
                   CI/CD 워크플로우 개선으로 서비스 배포 시간을 기존 약 13분에서
-                  8분대로 감소, CircleCI 월간 비용이 직전 6개월 내 월 최대 비용
-                  대비 약 80% 감소(
+                  8분대로 감소, <br />
+                  CircleCI 월간 비용이 직전 6개월 내 월 최대 비용 대비 약 80%
+                  감소(
                   <a
-                    className="font-semibold"
                     href="https://velog.io/@freejak5520/TIL-CICD-%EA%B0%9C%EC%84%A0-%EC%A7%84%ED%96%89Next.js-CircleCI-Yarn-berry"
                     target="_blank"
                   >
                     블로그
                   </a>
                   )
-                </Experience>
-                <Experience>
+                </ListItem>
+                <ListItem>
                   AWS CloudWatch Container Insights 지표를 이용한 대시보드
                   만들고 모니터링해서 이를 근거로 서비스에 사용하는 Task size를
                   1/2로 절약
-                </Experience>
-                <Experience>
+                </ListItem>
+                <ListItem>
                   AWS CloudWatch, SNS, Lambda, Slack을 사용한 ECS 리소스
                   사용량에 대한 알림을 구현하고, 실제로 크롤링으로 인한
                   비정상적인 사용량 증가를 빠르게 인지하고 대처
-                </Experience>
-                <Experience>
+                </ListItem>
+                <ListItem>
                   주류 상세페이지 canonical URL을 개선해 구글 서치 콘솔 기준
-                  1만건 이상 존재하던 '표준이 없는 중복 페이지 색인 문제'를 약
+                  1만건 이상 존재하던{" "}
+                  <code>표준이 없는 중복 페이지 색인 문제</code>를 약
                   1,500건으로 줄이고 현재도 지속적으로 감소 중
-                </Experience>
-                <Experience>
+                </ListItem>
+                <ListItem>
                   업무 내용 공유 및 개발 가이드를 위한 개발 문서 작성
                   (프론트엔드 16개, 인프라 7개 문서 작성)
-                </Experience>
-                <Experience>
+                </ListItem>
+                <ListItem>
                   Storybook, Chromatic 도입으로 컴포넌트 주도 개발 도입 및 협업
                   과정 개선
-                </Experience>
-                <Experience>
+                </ListItem>
+                <ListItem>
                   레거시 모달 시스템을 개선하고, 기존 모달 컨텐츠 문서화 및 개발
                   가이드 작성으로 동료 개발자의 개발 경험 향상
-                </Experience>
-                <Experience>
+                </ListItem>
+                <ListItem>
                   레거시 코드에 타입스크립트 도입 및 생성형 AI를 사용해 API 응답
                   데이터에 대한 타입 작성
-                </Experience>
-              </ExperienceList>
+                </ListItem>
+              </List>
 
               <ExperienceSkills>
                 기술 스택: Next.js, TypeScript, SWR, React Hook Form,
                 styled-components, Storybook, Chromatic, CircleCI, ECS
               </ExperienceSkills>
-            </CareerContent>
-          </Career>
+            </ProjectContent>
+          </Project>
         </Company>
 
         <Company>
@@ -180,38 +177,38 @@ function App() {
             진행했습니다.
           </Text>
 
-          <Career>
-            <CareerSide>
+          <Project>
+            <ProjectAside>
               <h4>Gigs 어드민 대시보드</h4>
               <SubInfo>2022. 06. ~ 2024. 05.</SubInfo>
-            </CareerSide>
-            <CareerContent>
-              <ExperienceList>
-                <Experience>
+            </ProjectAside>
+            <ProjectContent>
+              <List>
+                <ListItem>
                   Gigs 서비스의 백오피스 대시보드 풀스택 개발 진행
-                </Experience>
-                <Experience>
+                </ListItem>
+                <ListItem>
                   회원, 강의 진행, 결제 등의 데이터 그래프 모니터링 대시보드
                   구현
-                </Experience>
-                <Experience>
+                </ListItem>
+                <ListItem>
                   전문가 가상 전화번호 발급 및 관리 기능, 콜로그를 사용해서 통화
                   종료 후 안내 문자 발송 기능 구현
-                </Experience>
-                <Experience>
+                </ListItem>
+                <ListItem>
                   월별 세금계산서 발행 자동화 및 발행 상태 모니터링 페이지 구현
-                </Experience>
-              </ExperienceList>
+                </ListItem>
+              </List>
 
               <ExperienceSkills>
                 기술 스택: PHP, Laravel, Vite, React, TypeScript, React Query,
                 React Hook Form, Emotion
               </ExperienceSkills>
-            </CareerContent>
-          </Career>
+            </ProjectContent>
+          </Project>
 
-          <Career>
-            <CareerSide>
+          <Project>
+            <ProjectAside>
               <h4>
                 <a
                   className="underline"
@@ -222,28 +219,28 @@ function App() {
                 </a>
               </h4>
               <SubInfo>2022. 06. ~ 2024. 05.</SubInfo>
-            </CareerSide>
-            <CareerContent>
-              <ExperienceList>
-                <Experience>
+            </ProjectAside>
+            <ProjectContent>
+              <List>
+                <ListItem>
                   1:1 게임 강의 중계 플랫폼 Gigs의 프론트엔드 개발 진행
-                </Experience>
-                <Experience>
+                </ListItem>
+                <ListItem>
                   Pusher channels, REST API를 이용한 실시간 채팅 기능 프론트엔드
                   구현
-                </Experience>
-                <Experience>
+                </ListItem>
+                <ListItem>
                   Markdown 문서로 작성하고 관리할 수 있는 서비스 가이드 및 약관
                   페이지 구현
-                </Experience>
-              </ExperienceList>
+                </ListItem>
+              </List>
 
               <ExperienceSkills>
                 기술 스택: Next.js, TypeScript, React Query, React Hook Form,
                 Emotion
               </ExperienceSkills>
-            </CareerContent>
-          </Career>
+            </ProjectContent>
+          </Project>
         </Company>
 
         <Company>
@@ -259,46 +256,44 @@ function App() {
             담당했습니다.
           </Text>
 
-          <Career>
-            <CareerSide>
+          <Project>
+            <ProjectAside>
               <h4>전문가 중계 플랫폼</h4>
               <SubInfo>2021. 09. ~ 2022. 03.</SubInfo>
-            </CareerSide>
-            <CareerContent>
-              <ExperienceList>
-                <Experience>
+            </ProjectAside>
+            <ProjectContent>
+              <List>
+                <ListItem>
                   전문가 매칭, 재능 마켓 플랫폼을 React를 이용해 개발 진행
-                </Experience>
-              </ExperienceList>
+                </ListItem>
+              </List>
 
               <ExperienceSkills>
                 기술 스택: React, TypeScript, React Query, React Hook Form,
                 Storybook, CSS Module
               </ExperienceSkills>
-            </CareerContent>
-          </Career>
+            </ProjectContent>
+          </Project>
 
-          <Career>
-            <CareerSide>
+          <Project>
+            <ProjectAside>
               <h4>OGT.GG</h4>
               <SubInfo>2020. 09. ~ 2022. 05.</SubInfo>
-            </CareerSide>
-            <CareerContent>
-              <ExperienceList>
-                <Experience>
+            </ProjectAside>
+            <ProjectContent>
+              <List>
+                <ListItem>
                   1:1 게임 강의 중계 플랫폼 OGT(Online Game Tutor) 개발 및 출시
-                </Experience>
-                <Experience>Django, MySQL을 사용해 서버 구현</Experience>
-                <Experience>
-                  Django Template과 jQuery로 웹 서비스 구현
-                </Experience>
-              </ExperienceList>
+                </ListItem>
+                <ListItem>Django, MySQL을 사용해 서버 구현</ListItem>
+                <ListItem>Django Template과 jQuery로 웹 서비스 구현</ListItem>
+              </List>
 
               <ExperienceSkills>
                 기술 스택: Python, Django, MySQL, JavaScript, jQuery
               </ExperienceSkills>
-            </CareerContent>
-          </Career>
+            </ProjectContent>
+          </Project>
         </Company>
       </Section>
     </main>

@@ -49,7 +49,7 @@ export function Contact({
 /**
  * 본문 기본 목록 컴포넌트
  */
-export function ExperienceList({
+export function List({
   children,
   className,
 }: {
@@ -61,7 +61,7 @@ export function ExperienceList({
   );
 }
 
-export function Experience({
+export function ListItem({
   children,
   className,
 }: {
@@ -69,26 +69,6 @@ export function Experience({
   className?: string;
 }) {
   return <li className={cn("mt-1", className)}>{children}</li>;
-}
-
-export function MySkillList({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
-  return <ExperienceList className={className}>{children}</ExperienceList>;
-}
-
-export function Skill({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
-  return <Experience className={className}>{children}</Experience>;
 }
 
 export function SubInfo({
