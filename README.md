@@ -1,12 +1,5 @@
 # 프론트엔드 이력서
 
-## 기술 스택
-
-- Vite
-- React
-- TypeScript
-- Tailwind CSS
-
 ## 로컬 실행 방법
 
 저장소를 클론합니다.
