@@ -60,10 +60,10 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: var(--color-green-800);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
+  --secondary: var(--color-gray-800);
+  --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
@@ -94,10 +94,10 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
+  --primary: var(--color-green-200);
   --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
+  --secondary: var(--color-gray-200);
+  --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
   --accent: oklch(0.269 0 0);
@@ -136,13 +136,13 @@
   }
 
   h1 {
-    @apply text-4xl font-extrabold tracking-tight pb-2 border-b text-green-800;
+    @apply text-3xl font-semibold tracking-tight pb-2 border-b text-primary;
   }
   h2 {
-    @apply border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-green-800;
+    @apply border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0 text-primary;
   }
   h3 {
-    @apply text-2xl font-semibold tracking-tight;
+    @apply text-xl font-semibold tracking-tight text-secondary;
   }
   h4 {
     @apply text-lg font-semibold tracking-tight;
@@ -172,5 +172,9 @@
 
   code {
     @apply relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
+  }
+
+  a {
+    @apply underline;
   }
 }
