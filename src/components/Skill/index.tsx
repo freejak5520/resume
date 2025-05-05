@@ -31,7 +31,7 @@ export function ExperienceSkills({
   return (
     <p
       className={cn(
-        "[&:not(:first-child)]:mt-6 text-gray-700 dark:text-gray-300",
+        "[&:not(:first-child)]:mt-6 text-neutral-700 dark:text-neutral-300",
         className
       )}
     >

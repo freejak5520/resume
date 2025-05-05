@@ -58,7 +58,7 @@ export function SubInfo({
   return (
     <p
       className={cn(
-        "text-sm text-gray-700 dark:text-gray-300 leading-5",
+        "text-sm text-neutral-700 dark:text-neutral-300 leading-5",
         className
       )}
     >
