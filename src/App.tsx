@@ -1,16 +1,7 @@
-import {
-  Company,
-  Contact,
-  ContactList,
-  ListItem,
-  List,
-  ExperienceSkills,
-  Section,
-  SubInfo,
-  Text,
-} from "@/components";
+import { Company, List, ListItem, Section, SubInfo, Text } from "@/components";
+import { Contact, ContactList } from "@/components/Contact";
 import { Project, ProjectAside, ProjectContent } from "@/components/Project";
-import { MySkillList, MySkill } from "@/components/Skill";
+import { ExperienceSkills, MySkill, MySkillList } from "@/components/Skill";
 
 function App() {
   return (

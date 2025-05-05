@@ -1,4 +1,5 @@
 import { List, ListItem } from "@/components";
+import { cn } from "@/lib/utils";
 
 export function MySkillList({
   children,
@@ -18,4 +19,23 @@ export function MySkill({
   className?: string;
 }) {
   return <ListItem className={className}>{children}</ListItem>;
+}
+
+export function ExperienceSkills({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <p
+      className={cn(
+        "[&:not(:first-child)]:mt-6 text-gray-700 dark:text-gray-300",
+        className
+      )}
+    >
+      {children}
+    </p>
+  );
 }

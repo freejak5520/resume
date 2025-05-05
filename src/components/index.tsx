@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils";
 
 /**
- * 본문 기본 섹션 컴포넌트
+ * 본문 기본 섹션
  *
- * main 태그 내에서 사용
+ * main 하위에서만 사용
  */
 export function Section({
   children,
@@ -15,39 +15,8 @@ export function Section({
   return <section className={cn("mt-8", className)}>{children}</section>;
 }
 
-export function ContactList({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
-  return (
-    <ul className={cn("[&:not(:first-child)]:mt-6 list-none pl-0", className)}>
-      {children}
-    </ul>
-  );
-}
-
-export function Contact({
-  children,
-  className,
-  title,
-}: {
-  children: React.ReactNode;
-  className?: string;
-  title: string;
-}) {
-  return (
-    <li className={cn("mt-1", className)}>
-      <b className="mr-2">{title}:</b>
-      {children}
-    </li>
-  );
-}
-
 /**
- * 본문 기본 목록 컴포넌트
+ * 기본 목록
  */
 export function List({
   children,
@@ -61,6 +30,9 @@ export function List({
   );
 }
 
+/**
+ * 기본 목록 아이템
+ */
 export function ListItem({
   children,
   className,
@@ -71,6 +43,11 @@ export function ListItem({
   return <li className={cn("mt-1", className)}>{children}</li>;
 }
 
+/**
+ * 부가 정보
+ * 
+ * 날짜, 직책 등의 보조 정보
+ */
 export function SubInfo({
   children,
   className,
@@ -79,12 +56,20 @@ export function SubInfo({
   className?: string;
 }) {
   return (
-    <p className={cn("text-sm text-gray-700 dark:text-gray-300 leading-5", className)}>
+    <p
+      className={cn(
+        "text-sm text-gray-700 dark:text-gray-300 leading-5",
+        className
+      )}
+    >
       {children}
     </p>
   );
 }
 
+/**
+ * 본문 텍스트
+ */
 export function Text({
   children,
   className,
@@ -92,9 +77,14 @@ export function Text({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <p className={cn("[&:not(:first-child)]:mt-6", className)}>{children}</p>;
+  return (
+    <p className={cn("[&:not(:first-child)]:mt-6", className)}>{children}</p>
+  );
 }
 
+/**
+ * 경력 사항 회사 영역
+ */
 export function Company({
   children,
   className,
@@ -102,15 +92,9 @@ export function Company({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <div className={cn("[&:not(:first-child)]:mt-8", className)}>{children}</div>;
-}
-
-export function ExperienceSkills({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
-  return <p className={cn("[&:not(:first-child)]:mt-6 text-gray-700 dark:text-gray-300", className)}>{children}</p>;
+  return (
+    <div className={cn("[&:not(:first-child)]:mt-8", className)}>
+      {children}
+    </div>
+  );
 }

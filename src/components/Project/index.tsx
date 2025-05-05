@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 /**
- * 경력 사항 프로젝트 컴포넌트
+ * 경력 사항 프로젝트 영역
  */
 export function Project({
   children,
@@ -17,6 +17,11 @@ export function Project({
   );
 }
 
+/**
+ * 경력 사항 프로젝트 영역 왼쪽 영역
+ * 
+ * 프로젝트 이름과 기간을 작성
+ */
 export function ProjectAside({
   children,
   className,
@@ -27,6 +32,11 @@ export function ProjectAside({
   return <p className={cn("min-w-[150px]", className)}>{children}</p>;
 }
 
+/**
+ * 경력 사항 프로젝트 영역 오른쪽 영역
+ * 
+ * 프로젝트 내용을 작성
+ */
 export function ProjectContent({
   children,
   className,
