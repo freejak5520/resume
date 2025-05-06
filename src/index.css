@@ -186,8 +186,5 @@
     @media print {
       @apply hidden;
     }
-    @media screen {
-      @apply p-12 w-auto mx-auto;
-    }
   }
 }
