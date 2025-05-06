@@ -47,19 +47,19 @@ function App() {
         <Text>
           이를 위해 동료와의 협업 방식 개선, 개발 환경 및 경험 향상, 문서화의
           중요성을 깨닫고 적극적으로 기여해 왔습니다.
-          <br />이 과정에서 반복적인 업무의 비효율이나 기존의 문제를 해결하고
-          지표로 확인되는 성과를 얻었을때, 그리고 해결한 문제로 인해 동료들에게
-          긍정적인 피드백을 받을 때 큰 보람과 동기부여를 느낍니다.
+          <br />이 과정에서 반복적으로 발생하는 비효율적인 업무와 기존의 문제를
+          개선하고 동료들에게 긍정적인 피드백을 받을 때 큰 보람과 동기부여를
+          얻고 있습니다.
         </Text>
         <Text>
-          2020년 스타트업 창업 멤버로 개발을 시작해, 서비스 기획부터 개발, 배포,
-          운영까지 전 과정을 경험했습니다.
+          2020년 스타트업 창업 멤버로 개발을 시작하여, 서비스 기획부터 개발,
+          배포, 운영까지 전 과정을 경험했습니다.
         </Text>
         <Text>
           이 경험을 바탕으로 업무의 자동화, 협업 프로세스 개선 등 다양한 개발 및
           운영 과정에서 주도적으로 문제를 발견하고 개선해 왔으며, 실제로 배포
-          시간 약 40% 단축, CI/CD 비용 약 80% 감소, 사내 개발 문서 활성화 등의
-          성과를 냈습니다.
+          시간을 약 40% 단축하고, CI/CD 비용을 약 80% 절감하였으며, 사내 개발
+          문서 활성화 등의 성과를 냈습니다.
         </Text>
       </Section>
 
@@ -127,7 +127,7 @@ function App() {
                 <ListItem>
                   AWS CloudWatch Container Insights 지표를 이용한 대시보드
                   만들고 모니터링해서 이를 근거로 서비스에 사용하는 Task size를
-                  1/2로 절약
+                  1/2로 절감
                 </ListItem>
                 <ListItem>
                   AWS CloudWatch, SNS, Lambda, Slack을 사용한 ECS 리소스
@@ -136,36 +136,36 @@ function App() {
                 </ListItem>
                 <ListItem>
                   주류 상세페이지의 canonical URL을 개선해 구글 서치 콘솔 기준
-                  1만건 이상의 <code>표준이 없는 중복 페이지 색인 문제</code>를
-                  약 1,500건으로 줄이고 현재도 지속적으로 감소 중
+                  1만 건 이상의 <code>표준이 없는 중복 페이지 색인 문제</code>가
+                  약 1,500건으로 줄이고 지속적으로 개선 중
                 </ListItem>
                 <ListItem>
-                  업무 내용 공유 및 개발 가이드를 위한 개발 문서 작성
-                  (프론트엔드 16개, 인프라 7개 문서 작성)
+                  업무 내용 공유와 개발 가이드 제공을 위한 문서 작성 (프론트엔드
+                  16개, 인프라 7개 문서 작성)
                 </ListItem>
                 <ListItem>
-                  Storybook, Chromatic 도입으로 컴포넌트 주도 개발 도입 및 협업
-                  과정 개선
+                  Storybook, Chromatic 도입을 통한 컴포넌트 주도 개발 및 협업
+                  협업 프로세스 개선
                 </ListItem>
                 <ListItem>
-                  반복적으로 작성하던 Storybook 코드 스니펫을 VS Code 확장
-                  프로그램으로 개발하여 사내 공유 및 마켓플레이스(
+                  반복적으로 작성하던 Storybook 코드 스니펫을 VSCode 확장
+                  프로그램으로 제작, 사내 공유 및 마켓플레이스(
                   <a href="https://marketplace.visualstudio.com/items?itemName=JakeLee.storybook-8-typescript-snippets">
                     링크
                   </a>
-                  )와 GitHub(
+                  ), GitHub(
                   <a href="https://github.com/freejak5520/storybook-8-typescript-snippets">
                     링크
                   </a>
                   )에 공개
                 </ListItem>
                 <ListItem>
-                  레거시 모달 시스템을 개선하고, 기존 모달 컨텐츠 문서화 및 개발
-                  가이드 작성으로 동료 개발자의 개발 경험 향상
+                  기존 모달 콘텐츠와 개발 가이드 문서화, 레거시 모달 시스템
+                  개선을 통해 프론트엔드 개발 경험 향상에 기여
                 </ListItem>
                 <ListItem>
-                  레거시 코드에 타입스크립트 도입 및 생성형 AI를 사용해 API 응답
-                  데이터에 대한 타입 작성
+                  레거시 코드에 타입스크립트 도입과 생성형 AI를 활용한 API 응답
+                  데이터 타입 정의
                 </ListItem>
               </List>
 
