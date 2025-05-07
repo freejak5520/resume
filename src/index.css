@@ -131,7 +131,7 @@
 
   main {
     @media screen {
-      @apply p-12 max-w-screen-lg mx-auto;
+      @apply p-6 md:p-12 max-w-screen-lg mx-auto;
     }
   }
 
