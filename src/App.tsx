@@ -1,6 +1,7 @@
 import { Company, List, ListItem, Section, SubInfo, Text } from "@/components";
 import { Contact, ContactList } from "@/components/Contact";
 import ScreenOnlyFooter from "@/components/Footer";
+import { ExternalLink } from "@/components/ExternalLink";
 import { Project, ProjectAside, ProjectContent } from "@/components/Project";
 import { ExperienceSkills, MySkill, MySkillList } from "@/components/Skill";
 import { getQueryParams } from "@/lib/utils";
@@ -27,14 +28,14 @@ function App() {
             <Contact title="이메일">freejak5520@gmail.com</Contact>
             {contact && <Contact title="연락처">{contact}</Contact>}
             <Contact title="GitHub">
-              <a href="https://github.com/freejak5520" target="_blank">
+              <ExternalLink href="https://github.com/freejak5520">
                 https://github.com/freejak5520
-              </a>
+              </ExternalLink>
             </Contact>
             <Contact title="블로그">
-              <a href="https://velog.io/@freejak5520" target="_blank">
+              <ExternalLink href="https://velog.io/@freejak5520">
                 https://velog.io/@freejak5520
-              </a>
+              </ExternalLink>
             </Contact>
           </ContactList>
         </Section>
@@ -48,7 +49,7 @@ function App() {
           </Text>
           <Text>
             이를 위해 동료와의 협업 방식 개선, 개발 환경 및 경험 향상, 문서화의
-            중요성을 깨닫고 적극적으로 기여해 왔습니다.
+            중요성을 깨닫고 적극적으로 기여하고 있습니다.
             <br />이 과정에서 반복적으로 발생하는 비효율적인 업무와 기존의
             문제를 개선하고 동료들에게 긍정적인 피드백을 받을 때 큰 보람과
             동기부여를 얻고 있습니다.
@@ -59,9 +60,9 @@ function App() {
           </Text>
           <Text>
             이 경험을 바탕으로 업무의 자동화, 협업 프로세스 개선 등 다양한 개발
-            및 운영 과정에서 주도적으로 문제를 발견하고 개선해 왔으며, 실제로
-            배포 시간을 약 40% 단축하고, CI/CD 비용을 약 80% 절감하였으며, 사내
-            개발 문서 활성화 등의 성과를 냈습니다.
+            및 운영 과정에서 주도적으로 문제를 발견하고 개선했으며, 실제로 배포
+            시간을 약 40% 단축, CI/CD 비용을 약 80% 절감, 사내 개발 문서
+            활성화 등의 성과를 냈습니다.
           </Text>
         </Section>
 
@@ -95,18 +96,21 @@ function App() {
             <Project>
               <ProjectAside>
                 <h4>
-                  <a href="https://business.veluga.kr/" target="_blank">
+                  <ExternalLink href="https://business.veluga.kr/">
                     벨루가 비즈니스
-                  </a>
+                  </ExternalLink>
                 </h4>
 
                 <SubInfo>2024. 07. ~</SubInfo>
               </ProjectAside>
               <ProjectContent>
                 <Text>
-                  후기와 실제 발주, 판매 데이터를 이용해 주류를 판매하는 상점들
-                  공급사에게 정보를 제공하고, 온라인으로 발주할 수 있는 중계
-                  플랫폼을 제공합니다.
+                  상점에게 데이터를 이용한 주류 추천 및 쉬운 온라인 발주를 위한
+                  중계 플랫폼과 상점들의 실제 판매 데이터와 통계를 제공하는 유료
+                  서비스 '벨루가 파도 멤버십'을 제공합니다.
+                  <br />
+                  기존의 경직되어있고 규제가 강한 주류 유통 산업의 수많은 문제점
+                  해결을 목표로 프론트엔드 개발을 진행하고 있습니다.
                 </Text>
 
                 <List>
@@ -118,12 +122,9 @@ function App() {
                     13분에서 8분대로 감소, <br />
                     CircleCI 월간 비용이 직전 6개월 내 월 최대 비용 대비 약 80%
                     감소(
-                    <a
-                      href="https://velog.io/@freejak5520/TIL-CICD-%EA%B0%9C%EC%84%A0-%EC%A7%84%ED%96%89Next.js-CircleCI-Yarn-berry"
-                      target="_blank"
-                    >
+                    <ExternalLink href="https://velog.io/@freejak5520/TIL-CICD-%EA%B0%9C%EC%84%A0-%EC%A7%84%ED%96%89Next.js-CircleCI-Yarn-berry">
                       블로그
-                    </a>
+                    </ExternalLink>
                     )
                   </ListItem>
                   <ListItem>
@@ -147,18 +148,18 @@ function App() {
                   </ListItem>
                   <ListItem>
                     Storybook, Chromatic 도입을 통한 컴포넌트 주도 개발 및 협업
-                    협업 프로세스 개선
+                    프로세스 개선
                   </ListItem>
                   <ListItem>
                     반복적으로 작성하던 Storybook 코드 스니펫을 VSCode 확장
                     프로그램으로 제작, 사내 공유 및 마켓플레이스(
-                    <a href="https://marketplace.visualstudio.com/items?itemName=JakeLee.storybook-8-typescript-snippets">
+                    <ExternalLink href="https://marketplace.visualstudio.com/items?itemName=JakeLee.storybook-8-typescript-snippets">
                       링크
-                    </a>
+                    </ExternalLink>
                     ), GitHub(
-                    <a href="https://github.com/freejak5520/storybook-8-typescript-snippets">
+                    <ExternalLink href="https://github.com/freejak5520/storybook-8-typescript-snippets">
                       링크
-                    </a>
+                    </ExternalLink>
                     )에 공개
                   </ListItem>
                   <ListItem>
@@ -178,6 +179,56 @@ function App() {
                 </ExperienceSkills>
               </ProjectContent>
             </Project>
+
+            <Project>
+              <ProjectAside>
+                <h4>
+                  벨루가
+                  <br />
+                  어드민 대시보드
+                </h4>
+
+                <SubInfo>2024. 07. ~</SubInfo>
+              </ProjectAside>
+              <ProjectContent>
+                <Text>
+                  이벤트, 홈 화면 배너, 광고 관리 등 서비스 운영에 필요한 관리
+                  기능을 제공합니다.
+                  <br />
+                  사용자가 더 쉽고 안전하게 벨루가 서비스를 관리할 수 있도록
+                  프론트엔드 개발을 진행하고 있습니다.
+                </Text>
+
+                <List>
+                  <ListItem>
+                    광고 스케쥴 관리 기능 구현 시 요구사항을 충족하는 달력
+                    라이브러리를 찾지 못해 달력 UI 컴포넌트를 직접 구현하고,
+                    <br />이 경험을 바탕으로 달력 렌더링에 필요한 최소한의
+                    데이터를 제공하는 react hook을 라이브러리로 제작하여 Github(
+                    <ExternalLink href="https://github.com/freejak5520/use-calendar">
+                      링크
+                    </ExternalLink>
+                    )와 npm
+                    <ExternalLink href="https://www.npmjs.com/package/@freejak5520/use-calendar">
+                      (링크)
+                    </ExternalLink>
+                    에 공개
+                  </ListItem>
+                  <ListItem>
+                    서비스 홈에 노출되는 배너의 커스터마이징과 미리보기가 가능한
+                    관리 기능 구현,
+                    <br />
+                    Storybook embed 기능을 활용하여 구현했으며, 프로젝트 간
+                    컴포넌트 재사용을 위해 모노레포 도입을 검토 중
+                  </ListItem>
+                </List>
+
+                <ExperienceSkills>
+                  기술 스택: React, TypeScript, SWR, React Hook Form,
+                  styled-components
+                </ExperienceSkills>
+              </ProjectContent>
+            </Project>
           </Company>
 
           <Company>
@@ -189,9 +240,8 @@ function App() {
             </SubInfo>
 
             <Text>
-              게이머들을 위한 전적 검색, 커뮤니티 플랫폼을 만드는 OP.GG에서 1:1
-              게임 강의 중계 플랫폼 Gigs 서비스와 어드민 대시보드 개발을
-              진행했습니다.
+              게이머를 위한 전적 검색 및 커뮤니티 플랫폼 OP.GG에서 1:1 게임 강의
+              중계 플랫폼 Gigs 서비스와 어드민 대시보드 개발을 진행했습니다.
             </Text>
 
             <Project>
@@ -202,19 +252,19 @@ function App() {
               <ProjectContent>
                 <List>
                   <ListItem>
-                    Gigs 서비스의 백오피스 대시보드 풀스택 개발 진행
+                    Gigs 서비스의 백오피스 대시보드 풀스택 개발을 담당
                   </ListItem>
                   <ListItem>
-                    회원, 강의 진행, 결제 등의 데이터 그래프 모니터링 대시보드
+                    회원, 강의 진행, 결제 데이터를 시각화한 모니터링 대시보드
                     구현
                   </ListItem>
                   <ListItem>
-                    전문가 가상 전화번호 발급 및 관리 기능, 콜로그를 사용해서
-                    통화 종료 후 안내 문자 발송 기능 구현
+                    전문가용 가상 전화번호 발급/관리 기능과 콜로그를 활용한 통화
+                    종료 후 안내 문자 발송 기능 구현
                   </ListItem>
                   <ListItem>
-                    월별 세금계산서 발행 자동화 및 발행 상태 모니터링 페이지
-                    구현
+                    월별 세금계산서 자동 발행 시스템 및 발행 현황 모니터링
+                    페이지 구현
                   </ListItem>
                 </List>
 
@@ -228,13 +278,12 @@ function App() {
             <Project>
               <ProjectAside>
                 <h4>
-                  <a
+                  <ExternalLink
                     className="underline"
                     href="https://gigs.op.gg/"
-                    target="_blank"
                   >
                     Gigs
-                  </a>
+                  </ExternalLink>
                 </h4>
                 <SubInfo>2022. 06. ~ 2024. 05.</SubInfo>
               </ProjectAside>
@@ -244,12 +293,11 @@ function App() {
                     1:1 게임 강의 중계 플랫폼 Gigs의 프론트엔드 개발 진행
                   </ListItem>
                   <ListItem>
-                    Pusher channels, REST API를 이용한 실시간 채팅 기능
+                    Pusher channels와 REST API를 활용한 실시간 채팅 기능의
                     프론트엔드 구현
                   </ListItem>
                   <ListItem>
-                    Markdown 문서로 작성하고 관리할 수 있는 서비스 가이드 및
-                    약관 페이지 구현
+                    Markdown 기반의 서비스 가이드 및 약관 페이지 구현
                   </ListItem>
                 </List>
 
@@ -270,7 +318,7 @@ function App() {
             </SubInfo>
 
             <Text>
-              1:1 매칭 게임 과외 중계 플랫폼 OGT에서 서비스의 개발과 운영을
+              1:1 게임 강의 중계 플랫폼 OGT의 서비스 개발 및 운영을
               담당했습니다.
             </Text>
 
@@ -282,7 +330,7 @@ function App() {
               <ProjectContent>
                 <List>
                   <ListItem>
-                    전문가 매칭, 재능 마켓 플랫폼을 React를 이용해 개발 진행
+                    전문가 매칭, 재능 마켓 플랫폼을 React로 개발
                   </ListItem>
                 </List>
 
@@ -304,7 +352,7 @@ function App() {
                     1:1 게임 강의 중계 플랫폼 OGT(Online Game Tutor) 개발 및
                     출시
                   </ListItem>
-                  <ListItem>Django, MySQL을 사용해 서버 구현</ListItem>
+                  <ListItem>Django, MySQL을 사용한 서버 개발</ListItem>
                   <ListItem>Django Template과 jQuery로 웹 서비스 구현</ListItem>
                 </List>
 
