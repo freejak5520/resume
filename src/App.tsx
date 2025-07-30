@@ -44,15 +44,14 @@ function App() {
           <h2>소개</h2>
 
           <Text>
-            저는 사용자 경험과 개발자 경험의 향상을 중요한 가치로 여기는
-            프론트엔드 개발자입니다.
+            저는 사용자 경험과 개발자 경험의 향상을 중요하게 여기는 프론트엔드
+            개발자입니다.
           </Text>
           <Text>
-            이를 위해 동료와의 협업 방식 개선, 개발 환경 및 경험 향상, 문서화의
-            중요성을 깨닫고 적극적으로 기여하고 있습니다.
-            <br />이 과정에서 반복적으로 발생하는 비효율적인 업무와 기존의
-            문제를 개선하고 동료들에게 긍정적인 피드백을 받을 때 큰 보람과
-            동기부여를 얻고 있습니다.
+            동료와의 협업 개선, 개발 환경 향상, 문서화 등에 적극적으로 기여하고
+            있으며, 이 과정에서 반복적으로 발생하는 비효율적인 업무와 기존의
+            문제를 개선하고 동료들에게 긍정적인 피드백을 받을 때 큰 보람을 얻고
+            있습니다.
           </Text>
           <Text>
             2020년 스타트업 창업 멤버로 개발을 시작하여, 서비스 기획부터 개발,
@@ -61,8 +60,8 @@ function App() {
           <Text>
             이 경험을 바탕으로 업무의 자동화, 협업 프로세스 개선 등 다양한 개발
             및 운영 과정에서 주도적으로 문제를 발견하고 개선했으며, 실제로 배포
-            시간을 약 40% 단축, CI/CD 비용을 약 80% 절감, 사내 개발 문서
-            활성화 등의 성과를 냈습니다.
+            시간을 약 40% 단축, CI/CD 비용을 약 80% 절감, 사내 개발 문서 활성화
+            등의 성과를 냈습니다.
           </Text>
         </Section>
 
@@ -182,11 +181,7 @@ function App() {
 
             <Project>
               <ProjectAside>
-                <h4>
-                  벨루가
-                  <br />
-                  어드민 대시보드
-                </h4>
+                <h4>벨루가 어드민</h4>
 
                 <SubInfo>2024. 07. ~</SubInfo>
               </ProjectAside>
@@ -195,37 +190,43 @@ function App() {
                   이벤트, 홈 화면 배너, 광고 관리 등 서비스 운영에 필요한 관리
                   기능을 제공합니다.
                   <br />
-                  사용자가 더 쉽고 안전하게 벨루가 서비스를 관리할 수 있도록
-                  프론트엔드 개발을 진행하고 있습니다.
+                  관리자가 더 쉽고 안전하게 벨루가 서비스를 관리할 수 있도록
+                  서비스의 프론트엔드 개발과 백엔드 개발을 담당하고 있습니다.
                 </Text>
 
                 <List>
                   <ListItem>
-                    광고 스케쥴 관리 기능 구현 시 요구사항을 충족하는 달력
-                    라이브러리를 찾지 못해 달력 UI 컴포넌트를 직접 구현하고,
-                    <br />이 경험을 바탕으로 달력 렌더링에 필요한 최소한의
-                    데이터를 제공하는 react hook을 라이브러리로 제작하여 Github(
+                    백엔드 API 개발 - 운영에 필요한 데이터를 어드민 서비스에서
+                    확인할 수 있도록 프론트엔드 개발자와 협업해 기획 및 API
+                    개발을 진행
+                  </ListItem>
+                  <ListItem>
+                    일정 관리 기능 - 요구사항을 충족하는 달력 UI 컴포넌트를
+                    구현,
+                    <br />
+                    경험을 바탕으로 달력 렌더링에 필요한 최소한의 데이터를
+                    제공하는 react hook을 라이브러리로 제작하여 GitHub(
                     <ExternalLink href="https://github.com/freejak5520/use-calendar">
                       링크
                     </ExternalLink>
-                    )와 npm
+                    )와 npm(
                     <ExternalLink href="https://www.npmjs.com/package/@freejak5520/use-calendar">
-                      (링크)
+                      링크
                     </ExternalLink>
-                    에 공개
+                    ) 에 공개
                   </ListItem>
                   <ListItem>
-                    서비스 홈에 노출되는 배너의 커스터마이징과 미리보기가 가능한
-                    관리 기능 구현,
-                    <br />
-                    Storybook embed 기능을 활용하여 구현했으며, 프로젝트 간
-                    컴포넌트 재사용을 위해 모노레포 도입을 검토 중
+                    서비스 홈에 노출되는 배너의 커스터마이징 기능과 Storybook
+                    embed로 미리보기 구현
                   </ListItem>
                 </List>
 
                 <ExperienceSkills>
-                  기술 스택: React, TypeScript, SWR, React Hook Form,
+                  프론트엔드 기술 스택: React, TypeScript, SWR, React Hook Form,
                   styled-components
+                </ExperienceSkills>
+                <ExperienceSkills>
+                  백엔드 기술 스택: Python, Django, MySQL
                 </ExperienceSkills>
               </ProjectContent>
             </Project>
